@@ -1,0 +1,20 @@
+// compiler options: https://www.typescriptlang.org/docs/handbook/compiler-options.html
+
+{
+  "compilerOptions": {
+    "target": "ES2015", // Specify ECMAScript target version
+    "jsx": "react", // Support JSX in .tsx files
+    "lib": ["DOM", "ESNext"], // List of library files to be included in the compilation
+    "module": "ESNext", // Specify module code generation
+    "moduleResolution": "Node", // Determine how modules get resolved
+    "esModuleInterop": true, // Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
+    "noImplicitReturns": true, // Report an error when not all code paths in function return a value
+    "noUnusedLocals": true, // Report errors on unused locals
+    "noUnusedParameters": true, // Report errors on unused parameters
+    "strict": true, // Enable all strict type checking options
+    "sourceMap": true
+  },
+  "exclude": ["node_modules"]
+}

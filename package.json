@@ -1,0 +1,40 @@
+{
+  "name": "static-site-boilerplate-with-react-ts-webpack",
+  "version": "1.0.0",
+  "description": "static site boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "build": "run-s build:*",
+    "build:clean": "rimraf ./public",
+    "build:webpack": "NODE_ENV=production webpack --config webpack/webpack.prod.config.js",
+    "serve": "serve ./public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nabeliwo/static-site-boilerplate-with-react-ts-webpack.git"
+  },
+  "author": "nabeliwo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nabeliwo/static-site-boilerplate-with-react-ts-webpack/issues"
+  },
+  "homepage": "https://github.com/nabeliwo/static-site-boilerplate-with-react-ts-webpack#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "serve": "^11.3.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
