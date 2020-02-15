@@ -1,8 +1,6 @@
 'use strict'
 
 const { resolve } = require('path')
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const merge = require('webpack-merge')
 
@@ -16,15 +14,6 @@ const productionConfig = {
     chunkFilename: 'assets/js/[name].[chunkhash].[id].bundle.js',
     path: resolve(__dirname, '../public'),
   },
-  plugins: [
-    new CopyWebpackPlugin([
-      {
-        context: resolve(__dirname, '../'),
-        from: 'static'
-      },
-    ]),
-    new HtmlWebpackPlugin({ template: resolve(__dirname, '../static/index.html') }),
-  ],
   optimization: {
     minimizer: [
       new TerserPlugin({
